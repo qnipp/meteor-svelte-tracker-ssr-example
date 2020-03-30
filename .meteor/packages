@@ -10,3 +10,4 @@ standard-minifier-js@2.4.1
 static-html@1.2.2
 
 svelte:compiler@3.0.0_1
+server-render

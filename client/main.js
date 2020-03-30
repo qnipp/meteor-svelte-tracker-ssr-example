@@ -1,8 +1,9 @@
-import { Meteor } from 'meteor/meteor';
-import Person from './Person.svelte';
+import { onPageLoad } from 'meteor/server-render';
+import Person from '/components/Person.svelte';
 
-Meteor.startup(() => {
+onPageLoad(() => {
   new Person({
-    target: document.querySelector('main')
+    target: document.getElementById('main'),
+    hydrate: true,
   });
 });
